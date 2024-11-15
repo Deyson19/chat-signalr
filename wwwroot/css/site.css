@@ -1,0 +1,49 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus,
+.btn:active:focus,
+.btn-link.nav-link:focus,
+.form-control:focus,
+.form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+/*Estilos del chat*/
+.list-group-item {
+  border: none;
+  background-color: #f8f9fa;
+  margin-bottom: 5px;
+  border-radius: 5px;
+}
+.list-group-item:nth-child(odd) {
+  background-color: #e9ecef;
+}
+/* Estilo para el contenedor del chat */
+.chat-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Asegurar que la lista de mensajes ocupe el espacio restante */
+#messagesList {
+  flex-grow: 1;
+  max-height: 400px; /* Altura máxima para el scroll */
+  overflow-y: auto; /* Habilitar scroll si es necesario */
+}
